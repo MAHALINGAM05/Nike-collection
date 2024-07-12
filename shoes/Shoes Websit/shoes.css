@@ -1,0 +1,580 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, #c72092 , #6c14d0);
+}
+
+section{
+   height: 100vh;
+   width: 100vw;
+   background-image: url(./image/bg1.png);
+   background-size: cover;
+   background-position: center;
+}
+section nav{
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    background-color: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+section nav .logo{
+    font-size: 35px;
+    color: #c72092;
+    margin: 0 5px;
+    cursor: pointer;
+}
+section nav .logo span{
+    color: #6c14d0;
+    text-decoration: underline;
+}
+section nav .icon i{
+    margin-left:30px;
+}
+section nav ul{
+    display: flex;
+    list-style: none;
+}
+section nav ul li{
+    margin:  5px 20px;
+    display: inline-block;
+   
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition:0.3s;
+}
+section nav ul li a:hover{
+    color:#6c14d0;
+    border-bottom: 3px solid #6c14d0;
+    
+}
+section nav .icon:hover{
+    color: #c72092;
+}
+/*container*/
+.container {
+    position: relative;
+    top: 0px;
+}
+.main-box{
+   position: absolute;
+   top: 180px;
+   margin-left: 50px;
+   
+}
+.main-box h1{
+    font-size: 70px;
+    background: linear-gradient(to left,#c72092,#6c14d0);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.main-box span{
+    font-family: pyxidium quick;
+}
+.main-box p{
+    width: 600px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.mini-img{
+ position: absolute;
+ top: 50px;
+ left: 750px;
+
+}
+
+.social-icon i{
+    position: relative;
+    cursor: pointer;
+    top: 300px;
+    font-size: 19px;
+    left:1300px;
+    margin-top: 10px;
+    transition: .3s;
+}
+.social-icon i:hover{
+    color: #c72092;
+}
+.btn{
+    position: relative;
+    top: 75%;
+    margin-left: 50px;
+    width: 130px;
+    padding: 10px;
+    border-radius: 50px;
+    background:linear-gradient(to right,#c72092,#6c14d0);
+    color: white;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+.btn i:hover{
+    transform: translateX(6px);
+}
+.mid-container{
+    width: 100vw;
+    height: 140vh;
+}
+
+.mid-container h1{
+    display: flex;
+    justify-content: center;
+    margin:50px 0;
+    font-size: 50px;
+    background: linear-gradient(to right,#6c14d0,#c72092);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.list1{
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.list2{
+margin: 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img1{
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    background: #f6f6f6;
+    position: relative;
+    transition: .3s;
+    scale: 1;
+    
+}
+.img1:hover{
+    scale: 1.05;
+}
+.letter{
+    margin: 20px 0;
+    
+}
+.letter p{
+    margin-top: 10px;
+    color: #a4a4a4;
+}
+.letter h3{
+    margin-top: 10px;
+    font-weight: 800;
+}
+.letter .products_star i{
+    margin: 10px 0;
+    color: gold;
+}
+.letter button{
+    width: 200px;
+    padding: 10px;
+    position: fixed;
+    top: 360px;
+    left: 40px;
+    background: linear-gradient(to left,#6c14d0,#c72092);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+ .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.img1:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+.small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+}
+ .small_card i:hover{
+    color: #c72092;
+}
+/* About*/
+.about-container{
+    width: 100vw;
+    margin-top: 160px;
+}
+.about-container h1{
+    text-align: center;
+    font-size: 70px;
+}
+.about-container span{
+    background: linear-gradient(to left,#6c14d0,#c72092);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip:text ;
+}
+.about-main{
+    margin-top: 40px;
+    position: relative;
+    
+}
+.side-img img{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: linear-gradient(to left,#6c14d0,#c72092);
+    margin: 10px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.side-img img:hover{
+    opacity: 1;
+}
+.about-sec img{
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    height: 450px;
+    width: 600px;
+    box-shadow: 0 0 15px  #6c14d0;
+    border: 3px solid #6c14d0;
+    border-radius: 25px;
+    margin: 0 10px;
+    padding: 30px;
+}
+.about-text{
+    position: absolute;
+    top: 0;
+    left: 760px;
+    height: fit-content;
+     width: 550px;
+     padding: 30px;
+     margin: 30px 10px;
+     border: 3px solid #c72092;
+     box-shadow: 0 0 15px  #c72092;
+     border-radius: 20px;
+     text-align: justify;
+     color: #6c14d0;
+}
+.about-container .btn1{
+    position: relative; 
+    top: 70px;
+    left: 50%;
+    border: 1px solid #c72092;
+    box-shadow: 0 0 15px  #c72092;
+    width: 130px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.about-container .btn1:hover{
+    background: linear-gradient(to left,#6c14d0,#c72092);
+    color: white;
+}
+/* customars*/
+
+.customer-con{
+    width: 100vw;
+    margin-top: 130px;
+    height: 100vh;
+    
+}
+.customer-con h1{
+    text-align: center;
+    font-size: 70px;
+}
+.customer-con span{
+    background:linear-gradient(to left,#6c14d0,#c72092);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.rox-box{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+ .first-box{
+    height: 280px;
+    width: 400px;
+    box-shadow: 0 0 10px black ;
+    padding: 30px;
+    background-color:rgba(230, 230, 230, 0.4);
+
+}
+.profile_image{
+    display: flex;
+}
+.profile_image img{
+    border-radius: 60px;
+    transition: .3s;
+    box-shadow: 0 0 8px black;
+    scale: 1;
+}
+.profile_image .name{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.command{
+    padding: 20px;
+    text-align: justify;
+    line-height: 20px;
+    
+
+}
+.profile_image img:hover {
+     scale: 1.1;
+}
+/*services*/
+.service{
+    margin-top: 200px;
+   
+}
+.service h1{
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.service span{
+    background: linear-gradient(to left,#6c14d0,#c72092);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.service-box{
+    height: 200px;
+    
+    margin-top: 30px;
+}
+.service-icon{
+    height: 200px;
+    width: 700px;
+    
+    margin: 0 auto;
+    display: flex;
+}
+.s-box i{
+   font-size: 100px;
+   color: gold;
+   margin: 20px 0;
+}
+.s-box{
+    text-align: center;
+}
+/* form login*/
+
+.form-login{
+    margin-top: 20px;
+    height: 100vh;
+    position: relative;
+    background-image: url(image/loging_bg.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.form-img{
+    position: absolute;
+    top: 10px;
+}
+.form-right{
+    position: absolute;
+    left: 800px;
+    top: 80px;
+}
+.form-right h1{
+    font-size: 50px;
+    font-family: prevattscriptssk;
+    margin-bottom: 50px;
+}
+form p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+input{
+    width: 350px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left:-15px;
+    padding: 20px 40px;
+    color: #a4a4a4;
+    background:none;
+    outline: none;
+    border: 2px solid #6c14d0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.user i{
+    position: relative;
+    left: 15px;
+    color: #c72092
+}
+.password i{
+    position: relative;
+    left: 15px;
+    color: #c72092;
+}
+.forget{
+    position: absolute;
+    left: 190px;
+    font-size: medium;
+}
+button{
+    position: absolute;
+    top: 300px;
+    width: 350px;
+    padding: 10px;
+    background:linear-gradient(to left,#6c14d0,#c72092) ;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+.loging_icon{
+    position: absolute;
+    top: 370px;
+    left: 150px;
+   
+}
+.loging_icon img{
+    background: white;
+    border-radius: 50px;
+    padding: 3px;
+}
+/* footer*/
+
+footer{
+    width: 100%;
+}
+
+footer .footer_main{
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover{
+    color: #c72092;
+}
+
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+}
+
+footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092 , #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover::after{
+    left: 0;
+}
+
+
+
+
