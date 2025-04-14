@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Nick Collection</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-brand">Nick Collection</div>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Shopping Cart</h1>
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="../js/scroll-to-top.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/nav.js"></script>
+</body>
+</html>

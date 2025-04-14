@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Nick Collection</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/checkout-success.css">
+</head>
+<body>
+    <div class="background-decoration"></div>
+    <div class="gradient-overlay"></div>
+    <div class="pattern-overlay"></div>
+    
+    <div class="birds-container">
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div class="bird"></div>
+        <div class="bird"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-brand">Nick Collection</div>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="success-container">
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h1>Order Confirmed!</h1>
+                <p>Thank you for your purchase</p>
+            </div>
+            
+            <div class="order-details">
+                <h2>Order Summary</h2>
+                <div id="orderItems"></div>
+                <div class="order-total">
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="tax">
+                        <span>Tax (10%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                <button onclick="window.print()" class="print-bill">Print Bill</button>
+            </div>
+        </div>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/checkout-success.js"></script>
+</body>
+</html>
